@@ -30,7 +30,7 @@ const mobileScaleStyle: React.CSSProperties = {
   transform: 'none',
   transformOrigin: '0 0',
   width: '100%',
-  minHeight: '100dvh',
+  minHeight: '118dvh',
 };
 // const scaleStyle: React.CSSProperties = {
 //   transform: 'scale(0.90)',
@@ -63,7 +63,7 @@ export default function RootLayout({
     ...(disableRootScale ? mobileScaleStyle : scaleStyle),
     // Shared viewport variable to use in Tailwind arbitrary values:
     // h-[var(--app-vh)] or h-[calc(var(--app-vh)-144px)]
-    ['--app-vh' as string]: disableRootScale ? '100dvh' : '118dvh',
+    ['--app-vh' as string]: disableRootScale ? '118dvh' : '118dvh',
   } as React.CSSProperties;
 
   const content = (
@@ -81,10 +81,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${OpenSans.className} ${disableRootScale ? 'overflow-auto' : 'overflow-hidden'}`}
+      className={`${OpenSans.className} ${disableRootScale ? 'overflow-auto' : 'overflow-auto'}`}
     >
       <body
-        className={`${OpenSans.className} ${disableRootScale ? 'overflow-auto' : 'overflow-hidden'}`}
+        className={`${OpenSans.className} ${disableRootScale ? 'overflow-auto' : 'overflow-auto'}`}
         suppressHydrationWarning={true}
       >
         <div style={rootWrapperStyle}>{content}</div>
