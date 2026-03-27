@@ -81,10 +81,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${OpenSans.className} ${disableRootScale ? 'overflow-auto' : 'overflow-auto'}`}
+      className={`${OpenSans.className} ${disableRootScale ? 'overflow-auto' : 'overflow-hidden'}`}
     >
       <body
-        className={`${OpenSans.className} ${disableRootScale ? 'overflow-auto' : 'overflow-auto'}`}
+        className={`${OpenSans.className} ${disableRootScale ? 'overflow-auto' : 'overflow-hidden'}`}
         suppressHydrationWarning={true}
       >
         <div style={rootWrapperStyle}>{content}</div>
