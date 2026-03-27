@@ -152,7 +152,7 @@ function UserNavbar() {
 
   return (
     <>
-      <div className="inset-0 z-10 flex items-center justify-center bg-[#0063F7] shadow">
+      <div className="inset-0 z-10 flex h-16 items-center justify-center bg-[#0063F7] shadow">
         <div className="w-full max-w-[1380px] bg-[#0063F7]">
           <Navbar
             maxWidth="2xl"
