@@ -30,7 +30,7 @@ const mobileScaleStyle: React.CSSProperties = {
   transform: 'none',
   transformOrigin: '0 0',
   width: '100%',
-  minHeight: '118dvh',
+  minHeight: '100dvh',
 };
 // const scaleStyle: React.CSSProperties = {
 //   transform: 'scale(0.90)',
@@ -63,7 +63,7 @@ export default function RootLayout({
     ...(disableRootScale ? mobileScaleStyle : scaleStyle),
     // Shared viewport variable to use in Tailwind arbitrary values:
     // h-[var(--app-vh)] or h-[calc(var(--app-vh)-144px)]
-    ['--app-vh' as string]: disableRootScale ? '118dvh' : '118dvh',
+    ['--app-vh' as string]: disableRootScale ? '100dvh' : '118dvh',
   } as React.CSSProperties;
 
   const content = (
