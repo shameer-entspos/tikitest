@@ -1,0 +1,40 @@
+
+.my-suggestion__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .my-suggestion__photo {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+  
+  .my-suggestion__name {
+    font-weight: 600;
+  }
+  
+  code {
+    background-color: #eaeaea;
+    padding: 8px;
+    border-radius: 4px;
+    display: block;
+  }
+  
+  label {
+    display: block;
+    margin-top: 24px;
+    font-weight: 900;
+  }
+  
+  code.inline {
+    background-color: #eaeaea;
+    padding: 4px;
+    border-radius: 4px;
+    display: inline;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
